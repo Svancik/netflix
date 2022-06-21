@@ -59,4 +59,26 @@ c) Budeme používat useState abychom určili zda jsme v pozici top / scroll.
     console.log(isScrolled); /* nejdříve bude false a při scrollování true
 d) Na základě state "isScrolled" z useState() se bude kondičně stylovat celý div. */
     //Navbar.jsx
-    <div className={isScrolled ? "navbar scrolled" : "navbar"}></div>
+    <div className={isScrolled ? "navbar scrolled" : "navbar"}></div> /*
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------  
+D1) PURE REACT NETFLIX SLIDER
+
+a) POSOUVÁNÍ UKÁZEK FILEM V NĚKOLIKA SEZNAMECH - použijeme k tomu "transform: translateX(0px);"
+    a1) pomocí slideNumber ve state dovolíme / zakážeme posouvat se v sidebaru (pokud jsme na začátku - nemůžeme do leva a pokud jsme na konci - nemůžeme do prava). */
+    // List.jsx
+    const listRef = useRef();
+    const [slideNumber, setSlideNumber] = useState(0);
+    const handleClick = (direction) => {
+      let distance = listRef.current.getBoundingClientRect().x - 50;
+      if (direction === "left" && slideNumber > 0) {
+        /* pomocí useRef jsme si označili HTML element a měníme mu ve style "transform: translateX" pro posuv itemů v sidebaru */
+        listRef.current.style.transform = `translateX(${230 + distance}px)`;
+        /* při kliknutí na levou šipku ponížíme slideNumber ve state dokud se nedostaneme na 0 */
+        setSlideNumber(slideNumber - 1);
+      }/*
+      a2) pomocí isMoved ve state si nastavíme zda se zobrazí šipka - nechceme aby se zobrazovala šipka doleva pokud jsme na kraji
+  
