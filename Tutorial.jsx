@@ -120,3 +120,17 @@ isHovered && (
 )/*
 
 TIP: ALT + kursor = označení vícero řádků
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+F1) REACT REGISTER PAGE DESIGN
+Pomocí linear gradient  si nastavíme u background obrázku přechod stínu. */
+//regiser.scss
+.register{
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("https://cdn.hipwallpaper.com/i/98/21/dUyCkp.jpg");
