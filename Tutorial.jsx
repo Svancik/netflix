@@ -133,4 +133,7 @@ Pomocí linear gradient  si nastavíme u background obrázku přechod stínu. */
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 1) 100%
     ),
-    url("https://cdn.hipwallpaper.com/i/98/21/dUyCkp.jpg");
+    url("https://cdn.hipwallpaper.com/i/98/21/dUyCkp.jpg"); /*
+
+
+E1) REACT LOGIN PAGE DESIGN

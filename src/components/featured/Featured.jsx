@@ -25,16 +25,17 @@ export default function Featured({ type }) {
           </select>
         </div>
       )}
-      <img src="https://images8.alphacoders.com/121/1210131.jpg" alt="" />
+      <img src="https://images7.alphacoders.com/969/969444.png" alt="" />
       <div className="info">
         <img
-          src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABUZdeG1DrMstq-YKHZ-dA-cx2uQN_YbCYx7RABDk0y7F8ZK6nzgCz4bp5qJVgMizPbVpIvXrd4xMBQAuNe0xmuW2WjoeGMDn1cFO.webp?r=df1"
+          src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Berserk_anime_logo.png"
           alt=""
         />
         <span className="desc">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
-          dicta sit tempora nostrum esse cumque qui architecto dolor distinctio
-          accusamus hic?
+          In this world, is the destiny of mankind controlled by some
+          transcendental entity or law? Is it like the hand of God hovering
+          above? At least it is true that man has no control, even over his own
+          will...
         </span>
         <div className="buttons">
           <button className="play">

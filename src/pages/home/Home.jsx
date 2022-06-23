@@ -3,7 +3,7 @@ import Featured from "../../components/featured/Featured";
 import List from "../../components/list/List";
 import "./home.scss";
 
-export const Home = () => {
+const Home = () => {
   return (
     <div className="home">
       <Navbar />
@@ -14,3 +14,5 @@ export const Home = () => {
     </div>
   );
 };
+
+export default Home;
